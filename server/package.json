@@ -1,0 +1,17 @@
+{
+  "name": "kelime-ceviri-oyunu",
+  "version": "1.0.0",
+  "description": "İngilizce Türkçe kelime çeviri oyunu.",
+  "main": "app.js",
+  "author": "Onder BAYGIN",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "random-words": "^1.1.1",
+    "rword": "^3.2.0",
+    "socket.io": "^4.0.1",
+    "time-counter": "^1.0.0",
+    "tureng": "^1.0.35"
+  }
+}
