@@ -1,0 +1,260 @@
+@import "bootstrap.css";
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+:root {
+    --pink: #f5c0c0;
+    --darkPink: #dcacac;
+    --darkPink2: #c49999;
+    --blue: #9fd8df;
+    --darkBlue: #7db2b9;
+    --lightBlue: #cde5e8;
+    --orange: #f35d0c;
+    --green: #81b214;
+    --darkGreen: #74a012;
+    --red: #e13c3c;
+    --darkRed: #ca3636;
+}
+
+body {
+    background-image: url(/image/background.jpg);
+    font-family: "Indie Flower", cursive;
+}
+.hidden {
+    display: none;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .margin-mobile {
+        margin: 10px;
+    }
+}
+
+.content {
+    background-color: var(--pink);
+    border-radius: 25px;
+    border: 10px solid var(--darkPink);
+    padding: 25px;
+}
+
+.content-online {
+    background-color: var(--pink);
+    border-radius: 25px;
+    border: 10px solid var(--darkPink);
+    padding: 25px;
+}
+
+#countdown {
+    color: var(--red);
+    margin-top: 10px;
+}
+
+.online {
+    margin: 2px;
+    color: var(--green);
+}
+
+.reply-button {
+    font-size: 20px;
+}
+
+.settings {
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+
+.settings-item {
+    display: inline-table;
+    margin: 10px;
+}
+.color-grey {
+    color: grey;
+}
+
+.orange-hover:hover {
+    color: var(--orange);
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, */
+}
+
+.question-box {
+    background-color: var(--blue);
+    color: var(--orange);
+    padding: 20px;
+    border-radius: 25px;
+    border: 8px solid var(--lightBlue);
+}
+
+.question-box > label {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.question-box > label > .word {
+    font-family: "Courier New", Courier, monospace;
+    background-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: move 1300s linear infinite;
+}
+
+@keyframes move {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--darkGreen);
+}
+
+.text-bold {
+    font-weight: bold;
+}
+.answers > .answer-item {
+    animation: createBox 0.25s;
+    background-color: var(--darkPink);
+    font-size: 30px;
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+@keyframes createBox {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.answers > .answer-item:hover {
+    background-color: var(--darkPink2);
+}
+.answers > .answer-item > .answer {
+    text-decoration: underline !important;
+}
+
+.correct {
+    animation: correct 0.2s infinite alternate !important;
+}
+
+.wrong {
+    animation: wrong 0.2s infinite alternate !important;
+}
+
+@keyframes correct {
+    from {
+        background-color: var(--darkPink);
+    }
+    to {
+        background-color: var(--green);
+    }
+}
+
+@keyframes wrong {
+    from {
+        background-color: var(--red);
+    }
+    to {
+        background-color: var(--darkRed);
+    }
+}
+
+.correct-answers {
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.correct-answers h3 {
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.correct-answer-item {
+    color: var(--darkGreen);
+    text-decoration: underline;
+}
+.chat {
+    background-color: var(--pink);
+    width: 100%;
+    height: 550px;
+    border: 10px solid var(--darkPink);
+    border-radius: 25px;
+    padding: 10px;
+}
+.chat .area {
+    max-height: 300px;
+    overflow: auto;
+    border: 1px solid var(--darkPink2);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.message {
+    background-color: var(--darkPink2);
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    word-break: break-all;
+}
