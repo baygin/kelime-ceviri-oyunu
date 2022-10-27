@@ -44,6 +44,6 @@ Sunucuyu başlatmak için `node app.js` komutunu çalıştırıyoruz.
 
 ![Cevap girme](https://user-images.githubusercontent.com/34795266/170782070-8706afdc-7b7b-4307-8af3-7f137709e619.gif)
 
-## Çevrim içi kullanıcılar
+## Çevrimiçi kullanıcılar
 
-![Çevrim içi kullanıcılar](https://user-images.githubusercontent.com/34795266/170782159-050a15fc-0027-4260-bfee-bb38a5259112.gif)
+![Çevrimiçi kullanıcılar](https://user-images.githubusercontent.com/34795266/170782159-050a15fc-0027-4260-bfee-bb38a5259112.gif)
